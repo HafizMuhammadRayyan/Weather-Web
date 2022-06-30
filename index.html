@@ -11,14 +11,14 @@
 
 <body>
 
-    <form onsubmit="getData()">
+    <form onsubmit="getWeatherData() return false">
         <input type="text" placeholder="enter your city name" id="city">
         <button type="submit">Click Here</button>
     </form>
 
     <script>
 
-            function getData() {
+            function getWeatherData() {
             // get city name
             let city = document.querySelector('#city').value;
             console.log(city);
