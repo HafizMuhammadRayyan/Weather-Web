@@ -16,34 +16,37 @@
         <h1>Weather</h1>
     </nav>
     <div class="row">
-            <form onsubmit="getData(); return false">
-                <input type="text" placeholder="Enter your City name" id="city">
-                <button type="submit">Click Here</button>
-            </form>
+        <form onsubmit="getData(); return false">
+            <input type="text" placeholder="Enter your City name" id="city">
+            <button type="submit">Click Here</button>
+        </form>
 
-            <div class="content">
-                <div id="main">
-                    <img src=""  id="iconWeather">
+        <div class="content">
+            <div id="main">
+                <img src="" id="iconWeather">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <div class="main-child">
                     <div id="temp_c"></div>
                     <div id="temp_f"></div>
                 </div>
-                <div id="mainCity">
-                    <div id="cityName"></div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div id="weather"></div>
-                </div>
-                <div id="cols">
-                    <div id="min-max">
-                        <div id="min"></div>
-                        <div id="max"></div>
-                        <div id="precipitaion"></div>
-                    </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <div id="h-w-v">
-                        <div id="humidity"></div>
-                        <div id="wind"></div>
-                        <div id="visibility"></div>
-                    </div>
+
+            </div>
+            <div id="mainCity">
+                <div id="cityName"></div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <div id="weather"></div>
+            </div>
+            <div id="cols">
+                <div id="min-max">
+                    <div id="min"></div>
+                    <div id="max"></div>
+                    <div id="precipitaion"></div>
+                </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <div id="h-w-v">
+                    <div id="humidity"></div>
+                    <div id="wind"></div>
+                    <div id="visibility"></div>
                 </div>
             </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

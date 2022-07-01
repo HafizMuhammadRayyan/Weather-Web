@@ -10,7 +10,7 @@ function getData() {
 
             let icon = data.current.condition.icon;
             icon.replace("/file// ");
-            document.querySelector("#iconWeather").src = icon;
+            document.querySelector("#iconWeather").src = `https:${icon}`;
             document.querySelector("#temp_c").innerHTML = data.current.temp_c + "&deg;C";
             let tempF = data.current.temp_f;
             let tempFc = Math.trunc( tempF ); // remove decimal part of tempF to get tempFc

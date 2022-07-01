@@ -9,7 +9,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    ;
+    background-image: url(images/backnew.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 #navbar {
@@ -59,4 +62,17 @@ body {
 
 #content{
     margin-top: 1vh;
+}
+
+#main{
+    display: flex;
+    margin-top: 3vh;
+}
+
+.main-child{
+    font-size: 3vw;
+}
+
+#iconWeather{
+    width: 110px;
 }
